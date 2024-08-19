@@ -11,25 +11,26 @@ function Footer() {
     // text-9xl absolute items-center text-black mb-10 custom-text z-10
     // flex h-0 -top-48 justify-center relative space-x-6
     return (
-        <footer className=" lg:h-[100svh] mt-48 lg:mt-96 bg-contain bg-no-repeat  text-black py-8 " >
+        <footer className=" lg:h-[100svh] mt-48 lg:mt-10 bg-contain bg-no-repeat  text-black py-8 " >
             <div className=" flex h-[80svh]  items-center relative justify-center mb-4" >
                 <img src={Foot} alt="" className='w-full h-full object-contain z-0'/>
                 <h1 className="text-9xl absolute items-center text-black mb-10 custom-text z-10">2024</h1>
             </div>
             <div className="flex h-0 -top-48 justify-center relative space-x-6">
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-3xl  hover:scale-150">
+                {/* <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="text-3xl  hover:scale-150 transition animate duration-500">
                     <FontAwesomeIcon icon={faTwitter} />
-                </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-3xl hover:scale-150 ">
+                </a> */}
+                <a href="https://instagram.com/tynraishillong/" target="_blank" rel="noopener noreferrer" className="text-3xl hover:scale-150 transition animate duration-500">
                     <FontAwesomeIcon icon={faInstagram} />
                 </a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-3xl hover:scale-150 ">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-3xl hover:scale-150 transition animate duration-500">
                     <FontAwesomeIcon icon={faFacebook} />
                 </a>
-                <a href="mailto:someone@example.com" className="text-3xl hover:scale-150  ">
+                <a href="mailto:admin@tynrai.org" className="text-3xl hover:scale-150 transition animate duration-500 ">
                     <FontAwesomeIcon icon={faEnvelope} />
                 </a>
             </div>
+            <div className='mx-auto w-fit'>Copyright &copy; 2024 Tynrai. All Rights Reserved.</div>
         </footer>
     );
 }

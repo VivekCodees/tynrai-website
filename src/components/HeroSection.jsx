@@ -1,29 +1,20 @@
 import React from 'react';
+import home_bg from '../../public/home_bg.svg';
+import logo from '../../public/logo.svg'
+
 const HeroSection = () => {
   return (
-    <div className="relative h-screen flex items-center w-full justify-center content-between bg-center lg:bg-contain md:bg-cover sm:bg-cover bg-no-repeat  bg-slate-600" style={{backgroundImage: `url('https://framerusercontent.com/images/QOzP1jJP3WnEJBT1umaRWakgSeU.png?scale-down-to=1024')`}}>
-      <div className="absolute top-10 left-60 text-black lg:text-white lg:text-xl cursor-pointer">Tynrai</div>
-      <div className="absolute top-10 right-60 text-black lg:text-white lg:text-xl cursor-pointer">Start</div>
-      <div className="absolute bottom-20 left-60 text-black lg:text-white lg:text-xl cursor-pointer">Empowerment</div>
-      <div className="absolute bottom-20 right-64  text-black lg:text-white lg:text-xl cursor-pointer z-10">Innovation</div>
-      
-      {/* <div className="text-center">
-        <div className="relative custom">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-5xl opacity-35 leading-4 text-white">Unleashing</div>
-          </div>
-          <div className="absolute  inset-0 leading-4 flex items-center justify-center transform translate-y-16">
-            <div className="text-5xl opacity-35 text-white">Shillong's Potential</div>
-          </div>
-          <div className="absolute inset-0  flex items-center justify-center transform translate-y-32">
-            <div className="text-5xl opacity-35 text-white">Digitally.</div>
-          </div>
+    <div 
+      className="h-screen flex items-center justify-center text-white bg-cover bg-center"
+      style={{ backgroundImage: `url(${home_bg})` }}
+    >
+      <div className="text-center px-5">
+        <img src={logo} alt="Tynrai Logo" className="mx-auto mb-4 w-60 h-60" />
+        <div className='h-fit overflow-y-hidden'>
+          <h1 className="md:text-7xl text-6xl font-bold mb-1 animate-riseUp">tynrai.org</h1>
         </div>
-      </div> */}
-      <div className="text-center text-xl text-white opacity-55">
-        <div className="custom-text lg:text-7xl">Unleashing</div>
-        <div className="custom-text lg:text-7xl">Shillong's Potential</div>
-        <div className="custom-text lg:text-7xl">Digitally</div>
+        <p className="text-md font-thin mb-6">Empowering Shillong's Digital Future</p>
+        <p className="text-xl font-thin mt-10">Building the Region’s First Localized Data Center to Drive Innovation, Security, and Growth</p>
       </div>
     </div>
   );
